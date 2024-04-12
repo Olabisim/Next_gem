@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { RepeatingText } from "./components/repeatingText";
-import { HeaderText, MainHeaderText, ParagraphComponent, ParagraphComponentEnd, RoundPlanComponent, SpanSpaceBottom, SupplyStructure, WhitepaperQs } from "./components/TextComponents";
+import { HeaderText, LiBoost, MainHeaderText, ParagraphComponent, ParagraphComponentEnd, RoundPlanComponent, SpanSpaceBottom, SupplyStructure, UlHandler, WhitepaperQs } from "./components/TextComponents";
 
 
 
 export default function Home() {
   return (
-    <div className="px-10 md:px-20 pt-40 tracking-wide font-light">
+    <div className="px-4 md:px-20 pt-40 tracking-wide font-light">
       
     <div>
       {/* landing page */}
@@ -230,19 +230,30 @@ export default function Home() {
 
       <ParagraphComponent minimal content="You can subscribe to the Premium service over three periods: 1 month, 6 months, or one year. Discount is applied based on duration by burning an amount of $GEMAI through a transaction on the Ethereum chain, saved on a smart contract we deployed. " />
       
-      <ParagraphComponent minimal content="Here is a non-exhaustive plans list for the Premium service we plan to integrate in the future (or already present):" />
+      <ParagraphComponent minimal content="Here is a non-exhaustive plans list for the Premium service we plan to integrate in the future (or already present):" /> 
 
-      <ParagraphComponent moreMinial white content="• Accessing Next Gem AI to ask specific questions from our database dataset." />
+        <UlHandler>
 
-      <ParagraphComponent moreMinial white content="• Sentiment Analysis from community member engagement and trustability score." />
+        <LiBoost>Accessing Next Gem AI to ask specific questions from our database dataset.</LiBoost>
+        <LiBoost>Sentiment Analysis from community member engagement and trustability score.</LiBoost>
+        <LiBoost>Further details on the project info, such as direct pros and cons designed by the different AIs and resumed info on the web application on a single click.</LiBoost>
+        <LiBoost>Requesting particular analysis on a specific project by providing the website link, using our LLM AI system to start a real-time analysis and provide you a note in real-time.</LiBoost>
+        <LiBoost>Receive alerts based on Criteria pre-setup on our application, potentially getting info on new launches that meet.</LiBoost>
+        <LiBoost>Your conditions over socials, emails, etc. Real-time new analysis from our system, directly shared with you without extra time.</LiBoost>
+        {/* <ParagraphComponent moreMinimial white content="• Accessing Next Gem AI to ask specific questions from our database dataset." />
 
-      <ParagraphComponent moreMinial white content="• Further details on the project info, such as direct pros and cons designed by the different AIs and resumed info on the web application on a single click." />
+        <ParagraphComponent moreMinimial white content="• Sentiment Analysis from community member engagement and trustability score." />
 
-      <ParagraphComponent moreMinial white content="• Requesting particular analysis on a specific project by providing the website link, using our LLM AI system to start a real-time analysis and provide you a note in real-time." />
+        <ParagraphComponent moreMinimial white content="• Further details on the project info, such as direct pros and cons designed by the different AIs and resumed info on the web application on a single click." />
 
-      <ParagraphComponent moreMinial white content="• Receive alerts based on Criteria pre-setup on our application, potentially getting info on new launches that meet" />
-      
-      <ParagraphComponent moreMinial white content="your conditions over socials, emails, etc. Real-time new analysis from our system, directly shared with you without extra time." />
+        <ParagraphComponent moreMinimial white content="• Requesting particular analysis on a specific project by providing the website link, using our LLM AI system to start a real-time analysis and provide you a note in real-time." />
+
+        <ParagraphComponent moreMinimial white content="• Receive alerts based on Criteria pre-setup on our application, potentially getting info on new launches that meet" />
+
+        <ParagraphComponent moreMinimial white content="your conditions over socials, emails, etc. Real-time new analysis from our system, directly shared with you without extra time." /> */}
+                
+        </UlHandler>
+
 
       <HeaderText 
       header="PROJECT ROADMAP" 
