@@ -26,7 +26,10 @@ export const WhitepaperQs = ({title, children}) => (
   export const HeaderText = ({header, description}) => {
     return (
       <div className="text-[#f1f1f3] pt-10 pb-5">
-        <h2 className="text-[28px] md:text-[32px] uppercase py-5 font-bold">{header}</h2>
+         <div className=" py-5 uppercase">
+            <h3 className="font-bold text-[28px] md:text-[32px] bg-gradient-to-t from-[#000] via-[#dad8da] to-[#f2f2f2] inline-block text-transparent bg-clip-text">{header}</h3>
+        </div>
+        {/* <h2 className="text-[28px] md:text-[32px] uppercase py-5 font-bold">{header}</h2> */}
         <p className="text-[22px] md:text-[24px]">{description}</p>
       </div>
     )
@@ -35,9 +38,12 @@ export const WhitepaperQs = ({title, children}) => (
   export const MainHeaderText = ({header, title, description}) => {
     return (
       <div className="text-[#f1f1f3] pt-20 pb-5">
-        <h2 className="font-bold text-center text-[42px] md:text-[52px] bg-gradient-to-t from-[#000] via-[#f2f2f2] to-[#f2f2f2] inline-block text-transparent bg-clip-text">{header}</h2>
+        <h2 className="font-bold text-[36px] md:text-[44px] bg-gradient-to-t from-[#000] via-[#f2f2f2] to-[#f2f2f2] inline-block text-transparent bg-clip-text">{header}</h2>
         {/* <h2 className="text-[36px] md:text-[44px] font-bold py-2">{header}</h2> */}
-        <h3 className="text-[28px] md:text-[32px] uppercase py-5 font-medium">{title}</h3>
+        <div className=" py-5 uppercase">
+            <h3 className="font-medium text-[28px] md:text-[32px] bg-gradient-to-t from-[#000] via-[#dad8da] to-[#f2f2f2] inline-block text-transparent bg-clip-text">{title}</h3>
+        </div>
+        {/* <h3 className="text-[28px] md:text-[32px] uppercase py-5 font-medium">{title}</h3> */}
         <p  className="text-[22px] md:text-[24px]">{description}</p>
       </div>
     )
