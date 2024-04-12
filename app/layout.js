@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`{outfit.className} font-white`}>{children}</body>
+      <body className={`${outfit.className} font-white`}>{children}</body>
     </html>
   );
 }
